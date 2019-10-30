@@ -84,18 +84,12 @@ class Employees extends Component {
         Cell: props => {
           return (
             <div>
-              <button className="btn btn-primary"
+              <Link to="/details" className="btn btn-primary"
               // onClick={() => {
               //   this.deleteRow(props.original.id)
               // }}
-              >Edit</button>
-              <button className="mx-4 btn btn-danger"
-              // onClick={() => {
-              //   this.deleteRow(props.original.id)
-              // }}
-              >Delete</button>
-            </div>
-
+              >Details</Link>
+</div>
           )
         },
         sortable: false,
