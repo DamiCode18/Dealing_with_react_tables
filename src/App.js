@@ -4,6 +4,8 @@ import './App.css';
 import Employees from './Components/Employees';
 import User from './Components/User';
 import Details from './Components/Details';
+import LeaveList from './Components/LeaveList';
+import CreateLeave from './Components/CreateLeave';
 
 class App extends Component {
 	render() {
@@ -13,6 +15,8 @@ class App extends Component {
 					<Route path='/details' exact component={Details} />
 					<Route path='/' exact component={Employees} />
 					<Route path='/user' exact component={User} />
+					<Route path='/leave' exact component={LeaveList} />
+					<Route path='/create-leave' exact component={CreateLeave} />
 				</Router>
 			</div>
 		);
